@@ -10,7 +10,7 @@ import org.springframework.data.repository.query.Param;
 import com.generation.farmacia.model.Produto;
 
 
-
+@Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Long>{
 	public List <Produto> findByNomeContainingIgnoreCase(@Param("nome")String nome);
 	
